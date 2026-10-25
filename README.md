@@ -1,11 +1,11 @@
-# Mortality Headset Setup
+# Mortality Setup
 
-Download the setup APK from [Releases](https://github.com/offset1235/airsoft-mortality/releases/latest).
+Download **Mortality-Headset-Setup.apk** from [the latest release](https://github.com/offset1235/airsoft-mortality/releases/latest).
 
-The installer includes its download link and downloads the game files on the headset. It automatically rebuilds split assets and checks every download. Allow approximately 10 GB of free storage, keep the window open, and approve Android's installation prompt when asked.
+Setup is a separate app and stays installed alongside Airsoft Allstars. It installs the companion-enabled game, then transfers verified assets without root. Existing matching assets are reused. Allow approximately 10 GB free for a fresh installation. Approve Android installation prompts and return to Setup to finish if needed.
 
-Setup is replaced by Airsoft Allstars after the download and installation; it does not remain as a separate app.
+**Game logs** provides Refresh, Copy and Save for the game's own diagnostics. Save writes to Downloads/Mortality. System and separate Meta-service logs are excluded. No broad device-log permission is requested. A same-signature provider in the modified game handles assets and logs.
 
-The official store app has a different signing certificate; Android cannot install this setup over it. Uninstalling an app can remove saves. This setup does not back up saves or uninstall existing apps.
+The official game and older builds do not expose this companion interface. The official store build has a different signing certificate; Android cannot update it directly with the modified game. Uninstalling an app can remove saves.
 
-The full hosted install on a stock headset has not yet been verified. See the release notes for validation details.
+This release adds diagnostics; it does not bypass or resolve Meta authentication checks. Inspect logs before sharing them.
